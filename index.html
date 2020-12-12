@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <meta charset="UTF-8">
+    <title>Pixynixie Pest Removal</title>
+</head>
+
+<body>
+<header>
+    <div id="contact">
+        <p>PIXYNIXIE PEST REMOVAL <br>Phone: 555-2424</p>
+    </div>
+    <h1>PIXYNIXIE PEST REMOVAL</h1>
+</header>
+<div id="mystical">
+    <div class="left">
+            <ul class="nav">
+                <li>
+                    <a id="homeBtn">Home</a>
+                </li>
+                <li>
+                    <a id="userInfoBtn">Request Service</a>
+                </li>
+                <li>
+                    <a id="gameBtn">Memory: Beasts</a>
+                </li>
+            </ul>
+    </div>
+
+    <img class="source-img" src="space_pic_Final.jpg">
+    <div id="wrapper">
+        <div id="home">
+                <div id="homeParagraphs">
+                    <h2>BEAST REMOVAL SERVICES<br>DOWN TO A FANTASY</h2>
+                    <br>
+                    <p>Welcome to Pixynixie Pest Removal!</p>
+                    <p>Do you suspect a sneaky leprechaun stole your gold jewelry? Have you found
+                        some unicorn "gifts" in your yard? Call us today, and we can take
+                        care of the mystical beasts, so you don't have to!</p>
+                    <p>Once the beasts are captured, they are safely transported to The
+                        Cyber Yonder, where they are released and all live happily together.</p>
+                    <p>Scroll down to view before and after photos from some of our most
+                        recent assignments!</p>
+                </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <span id="slider-image-4"></span>
+                <span id="slider-image-5"></span>
+                <span id="slider-image-6"></span>
+                <div class="image-container">
+                    <img src="gnome_on_bed_final1.jpg" class="slider-image">
+                    <img src="bedroom_after_final.jpg" class="slider-image">
+                    <img src="troll_in-tub_final.jpg" class="slider-image">
+                    <img src="bath_after_final.jpg" class="slider-image">
+                    <img src="org_in_kitchen_final.jpg" class="slider-image">
+                    <img src="kitchen_after_final.jpg" class="slider-image">
+                </div>
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-button"></a>
+                    <a href="#slider-image-2" class="slider-button"></a>
+                    <a href="#slider-image-3" class="slider-button"></a>
+                    <a href="#slider-image-4" class="slider-button"></a>
+                    <a href="#slider-image-5" class="slider-button"></a>
+                    <a href="#slider-image-6" class="slider-button"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="submittedInfo">
+            <p>
+                Thank you for your interest! We will be contacting you soon!
+            </p>
+            <div id="customerDeets">
+
+            </div>
+        </div>
+
+        <div id="formPage">
+            <div id="pestForm">
+                <form id="pestType" action="final.js" method="post">
+                    <h3>Select The Pest(s) You Need Removed</h3>
+                    <label><input type="checkbox" name="beast" value="leprechaun"> Leprechaun</label><br>
+                    <label><input type="checkbox" name="beast" value="unicorn"> Unicorn</label><br>
+                    <label><input type="checkbox" name="beast" value="pegacorn"> Pegacorn</label><br>
+                    <label><input type="checkbox" name="beast" value="mermaid"> Mermaid</label><br>
+                    <label><input type="checkbox" name="beast" value="fairy"> Fairy</label><br>
+                    <label><input type="checkbox" name="beast" value="yeti"> Yeti</label><br>
+                    <label><input type="checkbox" name="beast" value="pixie"> Pixie</label><br>
+                    <label><input type="checkbox" name="beast" value="gnome"> Gnome</label><br>
+                    <label><input type="checkbox" name="beast" value="troll"> Troll</label><br>
+                    <label><input type="checkbox" name="beast" value="imp"> Imp</label><br>
+                    <label><input type="checkbox" name="beast" value="manticore"> Manticore</label><br>
+                </form><br>
+                <label for="comments">Don't see what you're looking for? Enter your pest below:</label>
+                <br><textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+            </div>
+
+            <div id="userInformation">
+                <form id="location" method="post" action="final.js">
+                    <br>
+                    <h2>Enter Your Information</h2>
+                    <div id="labels">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" required/><br>
+                        <br>
+                        <label for="address">Street Address: </label>
+                        <input type="text" id="address" name="streetAddress" required/><br>
+                        <br>
+                        <label for="city">City: </label>
+                        <input type="text" id="city" name="city" required/><br>
+                        <br>
+                        <label for="state">State: </label>
+                        <input type="text" id="state" name="state" required/><br>
+                        <br>
+                        <label for="zipcode">Zip Code: </label>
+                        <input type="text" id="zipcode" name="zipcode" required/><br>
+                        <br>
+                        <label for="number">Telephone Number: </label>
+                        <input type="tel" id="number" name="telephoneNumber" required/><br>
+                        <div id="errorMessage"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="submit_btn">
+                Submit
+            </div>
+        </div>
+
+        <div id="gameBoard">
+            <div class="row">
+                <button id="1" class="card"></button>
+                <button id="2" class="card"></button>
+                <button id="3" class="card"></button>
+                <button id="4" class="card"></button>
+            </div>
+            <div class="row">
+                <button id="5" class="card"></button>
+                <button id="6" class="card"></button>
+                <button id="7" class="card"></button>
+                <button id="8" class="card"></button>
+            </div>
+            <div class="row">
+                <button id="9" class="card"></button>
+                <button id="10" class="card"></button>
+                <button id="11" class="card"></button>
+                <button id="12" class="card"></button>
+            </div>
+            <div class="row">
+                <button id="13" class="card"></button>
+                <button id="14" class="card"></button>
+                <button id="15" class="card"></button>
+                <button id="16" class="card"></button>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+        <script type="text/javascript" src="final.js"></script>
+
+</div>
+</body>
+</html>
